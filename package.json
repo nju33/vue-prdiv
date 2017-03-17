@@ -14,7 +14,7 @@
   },
   "name": "vue-prdiv",
   "description": "⬇️ To pull and refresh",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "./dist/Prdiv.js",
   "repository": "nju33/vue-prdiv",
   "author": "nju33 <nju33.ki@gmail.com>",
@@ -33,11 +33,19 @@
   "dependencies": {},
   "xo": {
     "space": 2,
-    "envs": ["node", "browser"],
+    "envs": [
+      "node",
+      "browser"
+    ],
     "rules": {
-      "import/no-unresolved": [2, {
-        "ignore": ["\/?[A-Z].+$"]
-      }]
+      "import/no-unresolved": [
+        2,
+        {
+          "ignore": [
+            "/?[A-Z].+$"
+          ]
+        }
+      ]
     }
   }
 }
