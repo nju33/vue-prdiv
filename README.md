@@ -16,7 +16,7 @@ npm i -S vue-prdiv
 ## Usage
 
 ```js
-import Prdiv from './vue-prdiv';
+import Prdiv from 'vue-prdiv';
 
 // ...
   {components: {Prdiv}}
