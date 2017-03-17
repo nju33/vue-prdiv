@@ -13,11 +13,18 @@
     "xo": "^0.17.1"
   },
   "name": "vue-prdiv",
+  "description": "⬇️ To pull and refresh",
   "version": "0.0.0",
   "main": "./dist/Prdiv.js",
-  "repository": "nju33.github:nju33/vue-prdiv.git",
+  "repository": "nju33/vue-prdiv",
   "author": "nju33 <nju33.ki@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "vue",
+    "vue-component",
+    "update",
+    "refresh"
+  ],
   "scripts": {
     "dev": "webpack-dev-server --config webpack.config.dev.babel.js",
     "build": "webpack --config webpack.config.component.babel.js",
