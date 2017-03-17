@@ -14,7 +14,7 @@
   },
   "name": "vue-prdiv",
   "description": "⬇️ To pull and refresh",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "./dist/Prdiv.js",
   "repository": "nju33/vue-prdiv",
   "author": "nju33 <nju33.ki@gmail.com>",
