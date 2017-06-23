@@ -41,6 +41,13 @@
 <script>
 export default {
   props: {
+    ignoreTagPattern: {
+      required: true,
+      validator(val) {
+        return val instanceof 'RegExp'
+      },
+      default: /a|img|button|input|textarea|detail|code|pre/i
+    },
     onRefresh: {
       type: Function,
       required: true
@@ -121,6 +128,9 @@ export default {
       block.style.transition = '';
     },
     start(ev) {
+      if (this.ignoreTagPattern.test(ev.target.tagName)) {
+        return;
+      }
       const {box} = this.$refs;
       box.style.cssText = 'user-select:none';
       this.processing = true;
