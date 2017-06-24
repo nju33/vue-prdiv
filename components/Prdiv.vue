@@ -9,7 +9,9 @@
        >
     <transition name="block">
       <div v-if="processing" ref="block" class="prdiv-block" :style="{
-        height: blockHeight + 'px'
+        height: blockHeight + 'px',
+        maxHeight: blockHeight + 'px',
+        minHeight: blockHeight + 'px'
       }">
         <div ref="iconWrapper" class="icon-wrapper">
           <!-- By Sam Herbert (@sherb), for everyone. More @ http://goo.gl/7AJzbL -->
