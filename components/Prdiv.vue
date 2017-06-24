@@ -42,11 +42,12 @@
 export default {
   props: {
     ignoreTagPattern: {
-      required: true,
       validator(val) {
-        return val instanceof 'RegExp'
+        return val instanceof RegExp;
       },
-      default: /a|img|button|input|textarea|detail|code|pre/i
+      default() {
+         return /a|img|button|input|textarea|detail|code|pre/i;
+      }
     },
     onRefresh: {
       type: Function,
